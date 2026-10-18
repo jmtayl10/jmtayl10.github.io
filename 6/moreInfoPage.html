@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8">
+    <meta name="Author" content="Jasmine Taylor">
+    <meta name="Description" content="Project 3 for CSCI 3054.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="space, stars, lifecycles, alien, cat">
+     <!--Links copied from Google in order to use a more space-like font.-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/moreInfoPageStyles.css">
+    <title> Dusty's Star Log: More Info </title>
+
+</head>
+<body>
+     <nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">DUSTY'S STAR LOG</div>
+
+        <!--I used an LLM to create the hamburger menu for mobile view. Previously had no idea
+        how to create this.-->
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav">☰ Menu</button>
+
+        <ul class="nav-links" id="nav">
+            <li><a href="#" class="nav-item active">User Login</a></li>
+            <li><a href="mainPage.html" class="nav-item">Main Page</a></li>
+            <li><a href="starLogPage.html" class="nav-item">Star Log</a></li>
+            <li><a href="contactPage.html" class="nav-item">Contact Dusty</a></li>
+        </ul>
+    </div>
+</nav>
+
+<h1 style="color: white; text-align: center;"> MORE INFO </h1>
+    <div class="container">
+        <div class="card">
+            <img src="CSS/img/dustystretch.png" alt="Drawing of a green alien cat, wearing brown goggles and a red bandana." class="container-img">
+            <h2> Who is Dusty?</h2>
+            <p> Dusty is my own original character. He's just an alien cat, who explores the galaxy alongside another space explorer named A-1206. 
+                I knew he would be a perfect fit for this website, so I made him the mascot! Dusty is a very loyal cat, the greatest buddy to travel 
+                the cosmos with. His name is inspired by Dusty, the cat from Gravity Rush that gives Kat her gravity-defying abilities.
+            </p>
+            <h2>
+                How are stars born?
+            </h2>
+            <p>Stars are born inside a nebula, which is essentially a huge cloud of gas and dust. Once part 
+                of that cloud becomes dense enough, gravity pulls inwards and begins to collapse. The gas in the nebula heats up and 
+                forms a glowing core. This new protostar isn't a true star, but it's on the way to becoming one. Once this core 
+                reaches about 10 million K, it will start hydrogen fusing. That's when the star classifies into a main sequence star, the 
+                begninning of it's lifetime. This process of main sequence can take hundreds of thousands to millions of years!
+            </p>
+            <h2> Mass decides fate.</h2>
+            <p> A star's starting mass is the major factor in how it lives and how it ends.  </p>
+            
+            <!-- Used an LLM to learn how to do a table in HTML.-->
+             <table>
+                <thead>
+                    <tr>
+                        <th>Starting Mass</th>
+                        <th>Likely Path</th>
+                        <th>End Result</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Under 0.08</td>
+                        <td>Never starts hydrogen fusion.</td>
+                        <td>Brown Dwarf</td>
+                    </tr>
+                    <tr>
+                        <td>0.08 to 0.5</td>
+                        <td>Very long main sequence life</td>
+                        <td>White Dwarf (in the far future)</td>
+                    </tr>
+                    <tr>
+                        <td>0.5 to 8</td>
+                        <td>Giant phase, sheds outer layers.</td>
+                        <td>White Dwarf</td>
+                    </tr>
+                    <tr>
+                        <td>8 to 20</td>
+                        <td>Supergiant, then supernova</td>
+                        <td>Neutron Star</td>
+                    </tr>
+                    <tr>
+                        <td>Above 20</td>
+                        <td>Very short life, then supernova or collapse.</td>
+                        <td>Black Hole</td>
+                    </tr>
+                </tbody>
+             </table>
+            <h2> Spectral Classes</h2>
+            <p> Stars are sorted into classes by temperature using letter, going from hottest to coolest.  </p>
+              <table>
+                <thead>
+                    <tr>
+                        <th>Class</th>
+                        <th>Color</th>
+                        <th>Surface Temp</th>
+                        <th>Percentage of Main Sequence Stars</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>O</td>
+                        <td>Blue</td>
+                        <td>33,000+</td>
+                        <td>Extremely rare</td>
+                    </tr>
+                    <tr>
+                        <td>B</td>
+                        <td>Blue-white</td>
+                        <td>10,000 - 33,000+</td>
+                        <td>About 0.1%</td>
+                    </tr>
+                    <tr>
+                        <td>A</td>
+                        <td>White</td>
+                        <td>7,300 - 10,000</td>
+                        <td>About 0.6%</td>
+                    </tr>
+                    <tr>
+                       <td>F</td>
+                        <td>Yellow-white</td>
+                        <td>6,000 - 7,300</td>
+                        <td>About 3%</td>
+                    </tr>
+                    <tr>
+                        <td>G</td>
+                        <td>Yellow</td>
+                        <td>5,300 - 6,000</td>
+                        <td>About 8%</td>
+                    </tr>
+                     <tr>
+                        <td>K</td>
+                        <td>Orange</td>
+                        <td>3,900 - 5,300</td>
+                        <td>About 12%</td>
+                    </tr>
+                     <tr>
+                        <td>M</td>
+                        <td>Red</td>
+                        <td>2,300 - 3,900</td>
+                        <td>About 76%</td>
+                    </tr>
+                </tbody>
+             </table>
+
+             <h2>Sources and Image Credits</h2>
+             <ul>
+                <li> <a style="color: black;" href="https://science.nasa.gov/universe/stars/types/">NASA: Star Types</a></li>
+                <li> <a style="color: black;" href="https://science.nasa.gov/universe/black-holes/">NASA: Black Hole Basics</a></li>
+
+             </ul>
+        </div>
+    </div>
+
+    <footer> 2026, Jasmine Taylor. All Rights Reserved. </footer>
+    
+     <!-- The javascript was necessary for the hamburger menu, wasn't sure what other navigation
+     to go with on mobile that wouldn't use javascript. I used an LLM to figure this out.-->
+ <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+      });
+    </script>
+</body>
+</html>

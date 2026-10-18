@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="Author" content="Jasmine Taylor">
+    <meta name="Description" content="Project 3 for CSCI 3054.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="'keywords" content="space, stars, lifecycles, alien, cat">
+     <!--Links copied from Google in order to use a more space-like font.-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/contactPageStyles.css">
+    <title> Dusty's Star Log: Contact Dusty </title>
+
+</head>
+<body>
+   <nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">DUSTY'S STAR LOG</div>
+
+        <!--I used an LLM to create the hamburger menu for mobile view. Previously had no idea
+        how to create this.-->
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav">☰ Menu</button>
+
+        <ul class="nav-links" id="nav">
+            <li><a href="#" class="nav-item active">User Login</a></li>
+            <li><a href="mainPage.html" class="nav-item">Main Page</a></li>
+            <li><a href="starLogPage.html" class="nav-item">Star Log</a></li>
+            <li><a href="moreInfoPage.html" class="nav-item">More Info</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <main class="container">
+
+        <div class="dusty">
+        <img src="CSS/img/loginheader.png" alt="My drawing of a green alien cat, wearing a red bandana and brown goggles." class="dusty-img">
+        </div>
+
+        <header id='header' class="login-header">
+            <h1>CONTACT DUSTY</h1>   
+            <P>Enter your information to contact the mothership.</P>
+        </header>
+
+        <form class="card" id="loginForm">
+           
+            <!-- Used an LLM to learn input fields, I know we're going to actaully make these interactable with javascript. So
+             they're here mainly for looks.-->
+            <div class="input-field">
+                <input type="email" id="email" placeholder="EMAIL" required>
+            </div>
+
+            <div class="input-field">
+                <input type="name" id="name" placeholder="NAME" required>
+            </div>
+
+            <div class="input-field" id="message-field">
+                <input style= "margin-bottom: auto;" type="message" id="message" placeholder="MESSAGE..." required>
+            </div>
+            
+            <button type="submit" class="launch-btn">SEND OFF</button>
+        </form>
+    </main>
+
+    <footer>2026, Jasmine Taylor. All Rights Reserved.</footer>
+    
+    <!-- The javascript was necessary for the hamburger menu, wasn't sure what other navigation
+     to go with on mobile that wouldn't use javascript. I used an LLM to figure this out.-->
+ <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+      });
+    </script>
+</body>
+</html>
