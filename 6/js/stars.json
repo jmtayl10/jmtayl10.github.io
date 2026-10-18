@@ -1,0 +1,358 @@
+{
+  "categories": [
+    {
+      "id": "main-sequence",
+      "title": "Main Sequence",
+      "pageTitle": "Main Sequence Stars",
+      "image": "CSS/img/starLogMS.jpg",
+      "alt": "A young star taking form in the center of a nebula, it's birthplace.",
+      "credit": "IMAGE CREDIT: NASA/GFSC",
+      "intro": "The stellar population is mostly composed of Main Sequence Stars. After their birth in the molecular clouds, stars spend 90% of their lives in this phase, fusing hydrogen into helium within their cores. Main sequence stars vary from sizes, colors, and luminosity. Main Sequence stars can be a tenth of the Sun's size or two-hundred times the Sun's size. While one main sequence star may live millions of years, another can live into the billions. These stars can be seen by the unaided eye with some of the most popular examples being Sirius (the  brightest star in the night sky) and the Sun.",
+      "notes": [ "Main Sequence stars are classified into classes based on their color and temperature. These classes include: O (blue), B (blue-white), A (white), F (yellow-white), G (yellow), K(orange), and M (red). Visit the More Info page for more details.", "A star's temperature is mesaured in Kelvin, which is a temperature scale used by scientists. To convert to Celsuis, subtract 273.", "The Sun's mass is about 333,00 times the mass of the Earth (which is 5.97 septillion kilograms). However, the Sun loses about 4 million tons of mass each second."],
+      "stars": [
+        {
+          "id": "red-dwarf",
+          "name": "Red Dwarf",
+          "thumb": "CSS/img/redDwarf3.webp",
+          "thumbAlt": "A black background, with a rocky floor at the bottom. In the black is bright rings circling two red stars.",
+          "thumbCredit": "IMAGE: Protoplanetary disk around a pair of red dwarf stars. | IMAGE CREDIT: NASA",
+          "summary": "The smallest main sequence star, being just a fraction of the Sun's size and mass. It's a tiny, tough, and long-lasting star.",
+          "entry": [
+            { "label": "Type", "value": "M-class Main Sequence Star" },
+            { "label": "Temperature", "value": "about 2,400 - 3,700 K" },
+            { "label": "Mass", "value": "about 0.08 - 0.5 Suns" },
+            { "label": "Lifespan", "value": "trillions of years" },
+            { "label": "What's Next", "value": "fading into a white dwarf" }
+          ],
+          "description": [" Red dwarfs are the most common stars in the galaxy, while also being the smallest of the main sequence stars. These stars are so dim that they're unable to be viewed with the naked eye. When they produce helium through fusion in their core, the energy brings material to their surface where it cools and sinks back down. This process means they burn fuel very slow, as such, every red dwarf ever born is still alive today. Some scientists even believe that some low-mass red dwarfs have a lifespan longer than that of the universe. Red dwarfs are born in great numbers and have incredible lifespans, their existence makes up 75% of the Milky Way's stellar poulation.", "Examples of the red dwarf includes Proxima Centauri and CHXR 73 System."],
+          "images": [
+            { "src": "CSS/img/redDwarf2.jpg", "alt": "An extremely bright star reflecting against the camera, surronded by the black of space and stars.", "credit": "IMAGE: Proxima Centauri | IMAGE CREDIT: NASA/ESA" },
+            { "src": "CSS/img/redDwarf1.jpg", "alt": "A pixelated image of a red star, labeled as CHXR 73 A and B.", "credit": "IMAGE: CHXR 73 System | IMAGE CREDIT: NASA/ESA and K. Luhman (Penn State University)" }
+          ]
+        },
+        {
+          "id": "orange-dwarf",
+          "name": "Orange Dwarf",
+          "thumb": "CSS/img/orangeDwarf1.jpg",
+          "thumbAlt": "Two bright orange stars on a black background, reflecting brightly. The star on the left is slightly bigger than the right.",
+          "thumbCredit": " IMAGE: Alpha Centarui B (to the right) | IMAGE CREDIT: NASA/ESA ",
+          "summary": "\"Goldilock Stars\" known for being the stars most suitable for advanced life. The calm, just right star for life.",
+          "entry": [
+            { "label": "Type", "value": "K-class Main Sequence Star" },
+            { "label": "Temperature", "value": "about 3,900-5,300 K" },
+            { "label": "Mass", "value": "about 0.45 - 0.8 Suns" },
+            { "label": "Lifespan", "value": "15-45 billion years" },
+            { "label": "What's Next", "value": "evolving into a red giant, then a white dwarf" }
+          ],
+          "description": ["Orange dwarfs are slightly cooler than the Sun and shine steady for longer times. They're considered better for advanced life, given that the Sun will grow and dry the Earth until it's uninhabitable. An orange dwarf is the perfect star as it's habital zone is much longer than the sun. This habital zone means the star's conditions are just right, it's neither too hot nor too cold for liquid water to exist on a planet's surface. Orange dwarfs are referred to as \"Goldilock stars\" for hosting life.", "Example of the orange dwarf includes Alpha Centauri B."],
+          "images": [
+            { "src": "CSS/img/orangeDwarf1.jpg", "alt": "Two bright orange stars on a black background, reflecting brightly. The star on the left is slightly bigger than the right.", "credit": "IMAGE: Alpha Centarui B (to the right) | IMAGE CREDIT: NASA/ESA 3" }
+          ]
+        },
+        {
+          "id": "yellow-dwarf",
+          "name": "Yellow Dwarf",
+          "thumb": "CSS/img/yellowDwarf3.jpg",
+          "thumbAlt": "A large circular orange ball with a bumpy surface and light emitting off of it.",
+          "thumbCredit": "IMAGE: The Sun | IMAGE CREDIT: NASA/Solar Dynamics Observatory",
+          "summary": "The Sun, stars known for being white and larger than most stars despite their name.",
+          "entry": [
+            { "label": "Type", "value": "G-class Main Sequence Star" },
+            { "label": "Temperature", "value": "about 5,300-6,000 K" },
+            { "label": "Mass", "value": "0.8-1.04 Suns" },
+            { "label": "Lifespan", "value": "10 billion years" },
+            { "label": "What's Next", "value": "red giant, then planetary nebulae, then white dwarf" }
+          ],
+          "description": ["Yellow dwarfs are uncommon, only making up 7.5% of the Milky Way's stellar population. The name of these stars can be deceiving, as yellow dwarfs can be yellow or white. Additionally, these stars are larger than a majority of the stars in the Milky Way. They're referred to as dwarf simply due to their 3comparison to the colossal size of giant stars, as yellow dwarfs are larger and brighter than about 90% of the stars in the Milky Way. The best example of a yellow dwarf is the Sun. The Sun is a white star, only visually yellow due to the Earth's atmosphere and contains 99.8% of the mass in our solar system. The Sun is the largest object in the Milky Way, but still only considered a dwarf compared to the many stars in the universe.", "Examples of the yellow dwarf includes Alpha Centauri A and Tau Ceti."],
+          "images": [
+            { "src": "CSS/img/yellowDwarf1.jpg", "alt": "An up-close of a bright orange circle with a lava surface.", "credit": "IMAGE: The Sun | IMAGE CREDIT: NASA/GSFC " },
+            { "src": "CSS/img/yellowDwarf2.jpg", "alt": "An illustration of a yellow circle, emitting a yellow light with several circular lines going through it to signify magnetic fields.", "credit": "IMAGE: The Sun's magnetic fields | IMAGE CREDIT: NASA/GSFC" }
+          ]
+        },
+        {
+          "id": "blue-star",
+          "name": "Blue Star",
+          "thumb": "CSS/img/blueStar2.webp",
+          "thumbAlt": "A star cluster of blue stars, forming within a white cloud in space.",
+          "thumbCredit": "IMAGE: A cluster of blue stars in the Small Magellanic Cloud.  | IMAGE CREDIT: NASA",
+          "summary": " The brightest of main sequence stars with the shortest lifespan. They burn bright, but leave in a flash.",
+          "entry": [
+            { "label": "Type", "value": "O- or B-class Main Sequence Star" },
+            { "label": "Temperature", "value": "about 10,000-50,000+ K" },
+            { "label": "Mass", "value": "about 2-100+ Suns" },
+            { "label": "Lifespan", "value": "3-100 million years" },
+            { "label": "What's Next", "value": "supernova, leaving behind a neutron star or black hole" }
+          ],
+          "description": ["Blue stars are rare and extremely bright main sequence stars. They burn through their fuel quickly, meaning they burn hot and have the shortest lifespans of all stars. Their high temperatures contribute to their bright blue color, as blue light carries more energy than red light. Due to their short lives, these stars are mainly found near the regions they were formed at. All of these attribute to the reason why blue stars are scarce, however, their luminosity make them the most visible in night sky. Many blue stars end their lives in beautiful explosions, resulting in a supernova.", "Example of blue stars includes the Pleiades cluster."],
+          "images": [
+            { "src": "CSS/img/blueStar1.jpg", "alt": "The Pleiades Cluster, a bunch of bright blue stars surronded by the gas clouds of space.", "credit": "IMAGE: Pleiades Cluster | IMAGE CREDIT:  Kamil Fiedosiuk" }
+          ]
+        }
+      ]
+    },
+    {
+        "id": "evolved-giants",
+      "title": "Evolved Giants",
+      "pageTitle": "Evolved Giant Stars",
+      "image": "CSS/img/starLogEG.png",
+      "alt": "Red giant stars near and far sweep across the sky in this illustration.",
+      "credit": "NASA/GFSC",
+      "intro": "Evolved Giant stars have a much larger radius and brighter luminosity that normal main sequence stars. Stars go from main sequence to evolved giants after using all of the hydrogen fuel in their cores. As such, the remaining energy pulls from what was produced during fusion. As the core of these stars is squished, the temperate and pressure increases as well causing 3the helium to fuse into carbon. Hydrogen then moves into the star's outer layers, causing them to expand into bigger and brighter stars. These stars slowly shed their outer layers over time.",
+      "notes": [ "A star's temperature is mesaured in Kelvin, which is a temperature scale used by scientists. To convert to Celsuis, subtract 273.", "The Sun's mass is about 333,00 times the mass of the Earth (which is 5.97 septillion kilograms). However, the Sun loses about 4 million tons of mass each second. "],
+      "stars": [
+        {
+          "id": "red-giant",
+          "name": "Red Giant",
+          "thumb": "CSS/img/redGiant2.jpg",
+          "thumbAlt": "Red giant stars near and far sweep across the sky in this illustration.",
+          "thumbCredit": "IMAGE: Red giant stars near and far sweep across the sky in this illustration. | IMAGE CREDIT: NASA's Goddard Space Flight Center/Chris Smith (KBRwyle)",
+          "summary": "The transformation from a main sequence star to a giant. This star comes from the swelling up of the star's outer layers.",
+          "entry": [
+            { "label": "Type", "value": "post-main sequence giant" },
+            { "label": "Temperature", "value": "about 3,000-5,000 K" },
+            { "label": "Mass", "value": "about 0.5 - 8 Suns" },
+            { "label": "Lifespan", "value": "a billion years in this stage" },
+            { "label": "What's Next", "value": "AGB Star" }
+          ],
+          "description": ["Red giants occur when a main-sequence star runs out of hydrogen in its core. This core will shrink and the outer layers will expand. As such, the star has swelled to tens or hundreds of times it's old size. The Sun is a yellow dwarf star which will become a red giant at the end of its lifespan in 5 billion years. This new large giant will be big enough to swallow Mercury and Venus. While also drying the Earth completely up, ending all life. Red Giants are easy to spot within the night sky, appearing as several bright lights.", "Example of the red giant includes Betelgeuse."],
+          "images": [
+            { "src": "CSS/img/redGiant1.webp", "alt": "Image of the star Betelgeuse, comparing it's size with Earth and Jupiter's orbit on the bottom. Left side highlights Betelgeuse's position in the constellation: Orion the Hunter.", "credit": "IMAGE: Betelgeuse | IMAGE CREDIT: Andrea Dupree (Harvard-Smithsonian CfA), Ronald Gilliland (STScI), NASA and ESA" }
+          ]
+        },
+         {
+          "id": "agb-star",
+          "name": "AGB Star",
+          "thumb": "CSS/img/AGBStar2.webp",
+          "thumbAlt": "A white and blue nebula, surronded by a black space and various stars.",
+          "thumbCredit": "IMAGE: The Egg Nebula | IMAGE CREDIT:  NASA, ESA, Bruce Balick (UWashington)",
+          "summary": "The more extreme stage of giant stars. AGB stars shed their outer layers into carbon-rich cosmic dust.",
+          "entry": [
+            { "label": "Type", "value": " asymptotic giant branch star" },
+            { "label": "Temperature", "value": "about 2,500 - 3,500 K" },
+            { "label": "Mass", "value": "about 0.5 - 8 Suns" },
+            { "label": "Lifespan", "value": "a few million years in this stage" },
+            { "label": "What's Next", "value": "planetary nebulae, then white dwarf" }
+          ],
+          "description": ["AGB star or an asymptotic giant branch, is the last phase of giant stars. Helium and hydrogen burn in separate shells around a core of carbon and oxygen. This star becomes huge, luminous, and unstable as it pulses in size. The outer layers of this star is blown into space in the form of carbon, nitrogen, and other elements. This dust later becomes part of new stars, planets, and even people.", "Examples of the AGB Star includes Mira and R Leporis."],
+          "images": [
+            { "src": "CSS/img/AGBStar1.jpg", "alt": "A bright orange star, shining brightly amongst a black canvas full of other stars.", "credit": "IMAGE: R Leporis | IMAGE CREDIT:  Martin Pugh" }
+          ]
+        },
+         {
+          "id": "red-supergiant",
+          "name": "Red Supergiant",
+          "thumb": "CSS/img/redsuperGiant2.webp",
+          "thumbAlt": "A piercing bright red star in the middle of a huge dust cloud, surronded by blue stars.",
+          "thumbCredit": "IMAGE: The star V838 Monocerotis | IMAGE CREDIT: NASA, ESA, and The Hubble Heritage Team (STScI/AURA)",
+          "summary": " A supergiant that forms from massive main sequence stars. Such as massive white or blue stars. These stars are essentially nearing their end in a massive explosion.",
+          "entry": [
+            { "label": "Type", "value": "supergiant" },
+            { "label": "Temperature", "value": "about 3,500 - 4,500 K" },
+            { "label": "Mass", "value": "about 8 - 40 Suns" },
+            { "label": "Lifespan", "value": "a million years in this stage" },
+            { "label": "What's Next", "value": "core-collapse supernova" }
+          ],
+        "description": ["Amongst the largest stars known by size. Main sequence stars like massive white or blue stars become red supergiants after swelling enormously. These stars are cool, but their large surface makes them bright. Similar to AGB Stars, their outer layers are loose and wind can blow away many of these layers. As such they can lose their brightness. A red supergiants life is short, so whenever they collapse, these stars turn into Type II supernova.", "Example of the red supergiant includes Aldebaran."],
+          "images": [
+            { "src": "CSS/img/redsuperGiant1.jpg", "alt": "Up-close image of Saturn's rings, the red supergiant star Aldebaran is visible through these rings.", "credit": "IMAGE: Aldebaran | IMAGE CREDIT:  NASA/JPL/Space Science Institute" }
+          ]
+        },
+         {
+          "id": "blue-supergiant",
+          "name": "Blue Supergiant",
+          "thumb": "CSS/img/blueSupergiant2.jpg",
+          "thumbAlt": "A bright blue star illustration, with size comparison's on the side to Jupiter's orbit and Mar's orbit.",
+          "thumbCredit": "IMAGE: Blue Supergiant size comparison. | IMAGE CREDIT: NASA's Goddard Space Flight Center/S. Wiessinger",
+          "summary": "A supergiant that forms from massive main sequence stars. This star is extremely bright and extremely hot, essentially burning at full power until its end in a massive explosion.",
+          "entry": [
+            { "label": "Type", "value": "supergiant" },
+            { "label": "Temperature", "value": "about 10,000 - 30,000 K" },
+            { "label": "Mass", "value": "about 20 - 40 Suns" },
+            { "label": "Lifespan", "value": "a few million years" },
+            { "label": "What's Next", "value": "supernova" }
+          ],
+          "description": ["Blue supergiants are hot, massive stars that have left main sequence, but haven't cooled or swelled like a red supergiant. These stars remain hot and extremelty bright, much more brighter than the red supergiant and 100,000 brighter than the Sun. Some blue supergiants are young stars at the start of their giant phase. On the other hand, other blue supergiants can be stars that were previously red supergiants which shrank and heated up again.", "Example of the blue supergiant includes Rigel."],
+          "images": [
+            { "src": "CSS/img/blueSupergiant1.jpg", "alt": "Image of a bright blue star, Rigel, in the middle of Earth's colorful space.", "credit": "IMAGE: Rigel | IMAGE CREDIT: Rheinhold Wittich" }
+          ]
+        }
+      ]
+    },
+     {
+        "id": "stellar-remnants",
+      "title": "Stellar Remnants",
+      "pageTitle": "Stellar Remnant Stars",
+      "image": "CSS/img/starLogSR.png",
+      "alt": "A burst a beautiful colors in a circle, surronded by the black star-filled space.",
+      "credit": "IMAGE CREDIT:  NASA/CXC/MIT/L.Lopez et al;",
+      "intro": "Stellar Remnants appear once an Evolved Giant star sheds it's outer layers and leaves a core. These stars produce no heat and cool over time, however, they're very dense. For example, a teaspoon of material from a White Dwarf would weight more than a pickup truck. These stars vary from their starting mass and have their own unique processes during the stellar remnant life stage.",
+      "notes": [ "A star's temperature is mesaured in Kelvin, which is a temperature scale used by scientists. To convert to Celsuis, subtract 273.", "The Sun's mass is about 333,00 times the mass of the Earth (which is 5.97 septillion kilograms). However, the Sun loses about 4 million tons of mass each second. "],
+      "stars": [
+        {
+          "id": "white-dwarf",
+          "name": "White Dwarf",
+          "thumb": "CSS/img/whiteDwarf1.webp",
+          "thumbAlt": "A black image, full of various bright white stars.",
+          "thumbCredit": "IMAGE: White Dwarf Stars | IMAGE CREDIT: NASA and H. Richer (University of British Columbia)",
+          "summary": " A leftover core from a red giant. After a red giant sheds it's outer layers completely, it's left with just a core. A white dwarf is that glowing core, continuously cooling down.",
+          "entry": [
+            { "label": "Type", "value": "stellar remnant" },
+            { "label": "Temperature", "value": "over 100,000 K, but cooling slowly" },
+            { "label": "Mass", "value": "about 1.4 Suns" },
+            { "label": "Lifespan", "value": "billions of years cooling" },
+            { "label": "What's Next", "value": "black dwarf (in theory)" }
+          ],
+          "description": ["White dwarfs occur from low and medium mass stars, such as most main sequence stars. When the exposed core of a star isn't massive enough to explode, the outer layers eventually shed to leave a hot ball of carbon and oxygen. Unlike other stars, no fusion occurs in a white dwarf due to the lack of fuel. Additionally, the core may be hot, but not hot enough to fuse carbon and oxygen. The white dwarf will remain, continuously cooling, but never shrinking.", "Example of the white dwarfs includes Sirius B."],
+          "images": [
+            { "src": "CSS/img/whiteDwarf2.webp", "alt": "A bright blue star, up close and reflecting very brightly.", "credit": "IMAGE: Sirius B | IMAGE CREDIT: NASA, ESA, H. Bond (STScI) and M. Barstow (University of Leicester)" }
+          ]
+        },
+         {
+          "id": "neutron-star",
+          "name": "Neutron Star",
+          "thumb": "CSS/img/neutronStar2.webp",
+          "thumbAlt": "A white star core, surronded by blue light sitting alone in black of space.",
+          "thumbCredit": "IMAGE: A Neutron Star | IMAGE CREDIT:  NASA, STScI, Ralf Crawford (STScI)",
+          "summary": "Incredibly dense remnants of massive supergiant stars that have collapsed after a supernova explosion.",
+          "entry": [
+            { "label": "Type", "value": "stellar remnant" },
+            { "label": "Temperature", "value": "about a million K at birth" },
+            { "label": "Mass", "value": "about 1.1 - 2.3 Suns" },
+            { "label": "Lifespan", "value": "billions of years" },
+            { "label": "What's Next", "value": "continuously cools and slows down" }
+          ],
+          "description": ["Neutron stars are formed when a massive star's core collapses during a supernova. When the core crushes, protons and electrons are forced to merge into neutrons. A teaspoon of this matter would weight billions of tons. The core spins faster and the magnetic field intensifies as the core shrinks. These neutron stars include pulsars, which beam radiation across space. There are thought to be around one billion neutron stars in the Milky Way.", "Examples of neutron stars includes Crab Pulsar and the Vela Pulsar."],
+          "images": [
+            { "src": "CSS/img/neutronStar1.jpg", "alt": "A sky full of red stars, with a large colorful dust cloud from a Neutron Star.", "credit": "IMAGE: A Lonely Nuetron Star | IMAGE CREDIT:  X-ray (NASA/CXC/ESO/F.Vogt et al); Optical (ESO/VLT/MUSE & NASA/STScI)" }
+          ]
+        },
+         {
+          "id": "black-hole",
+          "name": "Black Hole",
+          "thumb": "CSS/img/blackHole2.jpg",
+          "thumbAlt": "An orange blurry circle surronded by black, with a black hole inside it.",
+          "thumbCredit": "IMAGE: The First Image of a Black Hole | IMAGE CREDIT: Event Horizon Telescope Collaboration",
+          "summary": "A pit of endless gravitational pull, a place where light can never escape.",
+          "entry": [
+            { "label": "Type", "value": "stellar remnant" },
+            { "label": "Temperature", "value": "colder than space itself" },
+            { "label": "Mass", "value": "about 3 - dozens of Suns" },
+            { "label": "Lifespan", "value": "an unimaginably long time" },
+            { "label": "What's Next", "value": "slowly evaporates through Hawking radiation" }
+          ],
+        "description": ["Black holes are the results of the core of a massive star collapsing. The core will shrink, the gravity becomes so strong that light can't even escape. Black holes have a boundary labeled the Event Horizon, this boundary is where this phenomenon occurs. Black holes cannot be seen directly, but they can be seen through special X-ray, stars orbiing it, or through gravitational waves from collisions.", "Examples of black holes includes Sagittarius A and Cygnus X-1."],
+          "images": [
+            { "src": "CSS/img/blackHole1.webp", "alt": "An x-ray close up of a blue supermassive black hole, surronded by colorful stars and gas clouds of pink and blue.", "credit": "IMAGE: Sagittarius A | IMAGE CREDIT:  X-ray: NASA/UMass/D.Wang et al., IR: NASA/STScI" }
+          ]
+        },
+         {
+          "id": "black-dwarf",
+          "name": "Black Dwarf",
+          "thumb": "CSS/img/blackDwarf1.jpg",
+          "thumbAlt": "A black circle surronded by a star-filled space.",
+          "thumbCredit": "IMAGE: A theoretical Black Dwarf | IMAGE CREDIT: <a href=\"https://commons.wikimedia.org/wiki/File:Black_dwarf_star-bpk.jpg\" style=\" color: black;\">Baperookamo</a>",
+          "summary": "A theoretical star that depicts life of a white dwarf once it completely cools off. These stars haven't appeared yet, given that the universe isn't old enough to have them. However, the theory itself helps explain the end for most stars.",
+          "entry": [
+            { "label": "Type", "value": "hypothetical remnant" },
+            { "label": "Temperature", "value": "2.7 K" },
+            { "label": "Mass", "value": "0.6 Suns" },
+            { "label": "Lifespan", "value": "forever" },
+            { "label": "What's Next", "value": "nothing" }
+          ],
+          "description": ["A black dwarf is a theoretical star which explains life after a white dwarf. As a white dwarf cools off, it will eventually have cooled completely. At that point, it's a black dwarf which gives off no light and is the same temperature as the space around it. A white dwarf cools extremely slowly, with a lifespan of at least hundreds of trillions of years. The universe is about 13.4 billion years old, as such, a black dwarf can't even exist yet. The oldest of white dwarfs are still glowing today, but a black dwarf is a highly logical theory for the future of all sunlike stars.", "There are no examples, except for illustrations."],
+          "images": [
+            { "src": "CSS/img/blackDwarf1.jpg", "alt": "A black circle surronded by a star-filled space.", "credit": "IMAGE: A theoretical Black Dwarf | IMAGE CREDIT: <a href=\"https://commons.wikimedia.org/wiki/File:Black_dwarf_star-bpk.jpg\" style=\" color: black;\">Baperookamo</a>" }
+          ]
+        }
+      ]
+    },
+     {
+        "id": "rare-extremes",
+      "title": "Rare & Extremes",
+      "pageTitle": "Rare & Extreme Stars",
+      "image": "CSS/img/starLogRE.png",
+      "alt": "A cloud of dust, covered with bright stars, with one star shining brightly in the middle.",
+      "credit": "IMAGE CREDIT: NASA/ESA/CSA/STScI/Webb ERO Production Team",
+      "intro": " Rare & Extremes covers the unique stars within the galaxy that can be unusually hot, magnetic, unstable, or extremely small. This group is typically classified as needing more research, as their existence expands on the idea of understanding how stars work.",
+      "notes": [ "A star's temperature is mesaured in Kelvin, which is a temperature scale used by scientists. To convert to Celsuis, subtract 273.", "The Sun's mass is about 333,00 times the mass of the Earth (which is 5.97 septillion kilograms). However, the Sun loses about 4 million tons of mass each second. "],
+      "stars": [
+        {
+          "id": "wolf-rayet",
+          "name": "Wolf-Rayet Star",
+          "thumb": "CSS/img/wolfRayet2.jpg",
+          "thumbAlt": "The star shines brightly at the very centre of this explosive image and around the hot clumps of gas are ejected into space at over 150 000 kilometres per hour.",
+          "thumbCredit": "IMAGE: Wolf-Rayet 124 | IMAGE CREDIT: ESA/Hubble and NASA",
+          "summary": "A giant star that is stripped bare, leaving behind a core and cloud of gas.",
+          "entry": [
+            { "label": "Type", "value": "extremely hot, massive star" },
+            { "label": "Temperature", "value": "30,000 - 200,000 K" },
+            { "label": "Mass", "value": "about 20+ Suns at birth" },
+            { "label": "Lifespan", "value": "few hundred thousand years" },
+            { "label": "What's Next", "value": "supernova, possibly a gamma-ray burst" }
+          ],
+          "description": ["Wolf-rayet stars mostly form from O-class main sequence stars that are massive. The wolf-rayet is a rare, super-massive star in a late, fast stage of life. The star is formed when strong winds blow away its outer hydrogen layers. This exposes the burning helium, carbon, nitrogen, and oxygen to the surface. This exposure creates beautiful and deeply colored clouds around the star. These clouds were carried by heavy winds, allowing the star to first be discovered in 1867.", "Examples of Wolf-Rayet Stars include Gamma Velorum and WR 124."],
+          "images": [
+            { "src": "CSS/img/wolfRayet1.png", "alt": "A bright star core, surronded by outer layers of colorful bright orange.", "credit": "IMAGE: Wolf-Rayet Binary | IMAGE CREDIT:  NASA, ESA, CSA, STScI; Science: Yinuo Han (Caltech), Ryan White (Macquarie University); Image Processing: Alyssa Pagan (STScI)" }
+          ]
+        },
+         {
+          "id": "magnetar",
+          "name": "Magnetar",
+          "thumb": "CSS/img/magnetar2.webp",
+          "thumbAlt": "A magnetar is depicted losing material into space in this artist's concept. The magnetar's strong, twisted magnetic field lines (shown in green) can influence the flow of electrically charged material from the object, which is a type of neutron star.",
+          "thumbCredit": "IMAGE: A Magnetar | IMAGE CREDIT:  NASA/JPL-Caltech",
+          "summary": "A neutron star with the strongest magnetic field to ever exist.",
+          "entry": [
+            { "label": "Type", "value": "neutron star with an extreme magnetic field" },
+            { "label": "Temperature", "value": "millions of K" },
+            { "label": "Mass", "value": "about 1 - 2 Suns" },
+            { "label": "Lifespan", "value": "10,000 years" },
+            { "label": "What's Next", "value": "quiets down as the field fades" }
+          ],
+          "description": ["Magnetars are essentially neutron stars with an incredibly powerful magnetic field around it. This magnetic field is trillions of times stronger than Earth's and currently the strongest recorded in the universe. The field will shift and strain against the star's surface, this crack will cause a starquake and release a burst of X-rays and gamma rays. In 2004, a flare from a magnetar thousands of light-years away disturbed Earth's upper atmosphere.", "Examples of Magentars include SGR 0501+4516 and SGR 0418+5729. SGR stands for Soft Gamma Repeater, with the numbers identifying their galactic coordinates."],
+          "images": [
+            { "src": "CSS/img/magnetar1.jpg", "alt": "A bright blue star, with lines circling it to signify the magnetic fields.", "credit": "IMAGE: Illustration of Magnetar | IMAGE CREDIT: Illustration: ESA" }
+          ]
+        },
+         {
+          "id": "yellow-hypergiant",
+          "name": "Yellow Hypergiant",
+          "thumb": "CSS/img/yellowHypergiant2.webp",
+          "thumbAlt": "A bright yellow star far in the distance, outshining the canvas of stars around it.",
+          "thumbCredit": "IMAGE: A Yellow Hypergiant | IMAGE CREDIT:  ESO/Digitized Sky Survey 2",
+          "summary": "One of the rarest stars to exist, the yellow hypergiant is very unstable compared to its counterparts.",
+          "entry": [
+            { "label": "Type", "value": "hypergiant" },
+            { "label": "Temperature", "value": "4,000 - 8,000 K" },
+            { "label": "Mass", "value": "a few dozen Suns" },
+            { "label": "Lifespan", "value": "very short" },
+            { "label": "What's Next", "value": "likely a supernova" }
+          ],
+        "description": ["Yellow hypergiants are amongst the rarest of stars, with only a handful actually being identified. These stars are enormous, being hundreds of times wider than the Sun and hundreds of thousands times brighter. They sit in an unstable stage between red and blue supergiants. The outer layers of a yellow supergiant are barely held together, causing them to pulse and throw off outbursts of gas. These outbursts of material form huge dusty envelopes and extend the atmosphere around the star.", "Examples of yellow hypergiants include Rho Cassiopeiae and HR 5171."],
+          "images": [
+            { "src": "CSS/img/yellowHypergiant1.jpg", "alt": "A night sky filled with stars, with a bright yellow star far in the distance.", "credit": "IMAGE: Rho Cassiopeiae in Optical Light | IMAGE CREDIT: <a href=\"https://commons.wikimedia.org/wiki/File:Rho_Cassiopeiae.jpg\" style= \"color: white;\">David Ritter</a>" }
+          ]
+        },
+         {
+          "id": "brown-dwarf",
+          "name": "Brown Dwarf",
+          "thumb": "CSS/img/brownDwarf2.png",
+          "thumbAlt": "An illustration of a black space filled with stars, with a large brown planet-like star in the center.",
+          "thumbCredit": "IMAGE: A Illustration of a Brown Dwarf | IMAGE CREDIT: NASA-JPL, Caltech",
+          "summary": "The in-between of a planet and a star. Brown dwarfs are essnetially formed like stars, but lack the necessary mass in order to act like one. As such, these stars behave more like a planet.",
+          "entry": [
+            { "label": "Type", "value": "substellar object" },
+            { "label": "Temperature", "value": "250 - 2,800 K" },
+            { "label": "Mass", "value": "about 13 - 80 Jupiters" },
+            { "label": "Lifespan", "value": "cools and fades forever" },
+            { "label": "What's Next", "value": "keeps cooling" }
+          ],
+          "description": ["Brown dwarfs are between stars and planets. While they form like stars through nebulae, they're too small. Because of their weak mass, they're unable to sustain hydrogen fusion like every other star. As such, brown dwarfs simply glow faintly and slowly cool forever. Brown dwarfs are mainly magenta, purple, or black to the naked eye. Their name was simply to imply a color between that of red and black.", "Examples of brown dwarfs include Gliese 229 B and Luhman 16 AB."],
+          "images": [
+            { "src": "CSS/img/brownDwarf1.jpg", "alt": "A space full of stars with a red planet lookalike star that's brown-red with brown stripes.", "credit": "IMAGE: Brown Dwarf Illustration | IMAGE CREDIT: NASA, ESA, Joseph Olmsted (STScI)" }
+          ]
+        }
+      ]
+    }
+  ]
+}
