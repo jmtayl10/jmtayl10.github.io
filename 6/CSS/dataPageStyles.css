@@ -1,0 +1,287 @@
+body{
+  background-image: url("img/dataBackground.png");
+  font-family: 'Oxanium', sans-serif;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0;
+}
+
+h1{
+  color: white;
+  text-align: center;
+  font-size:30px;
+}
+
+
+.navbar {
+  background-color: #EB5E28;
+  border-bottom: 3px dashed #bd3e0c; 
+  padding: 5px 5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.nav-toggle{
+  display: none;
+}
+
+
+.nav-container {
+  max-width: 100%;
+  height: 50px;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 0 #0c090a;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.nav-item {
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 1px 0 #0c090a;
+  font-size: 20px;
+  padding: 10px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.link-decor-black{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+}
+
+.row1{
+  justify-content: center;
+  display: flex; 
+  align-items: center;
+  gap:40px;
+  margin-top: 100px;
+  width: 100%;
+  min-height: 200px; 
+}
+
+.row2{
+  justify-content: center;
+  display: flex; 
+  align-items: center;
+  gap:40px;
+  margin-top: 100px;
+  width: 100%;
+  min-height: 300px; 
+}
+
+.row-img{
+  margin:30px;
+  min-width: 100px;
+    width: 350px;
+    border-radius: 25px;
+}
+
+.mobile-img{
+  display: none;
+}
+
+.row-card{
+  text-align: center;
+  gap: 10px;
+  height: auto;
+  width: 300px;
+  min-width: 100px;
+  background-color: #FFFCF2;
+  border: 3px solid #bd3e0c;
+  border-radius: 25px;
+  padding: 40px 30px;
+  box-shadow: 0 6px 12px black;
+  color: black; 
+  margin: 20px;
+}
+
+.main-card{
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin: 100px;
+    max-width: 90%;
+    min-height: 200px; 
+    background-color: #FFFCF2;
+    border: 3px solid black;
+    border-radius: 25px;
+    padding: 40px 30px;
+    box-shadow: 0 6px 12px black;
+    color: black;
+}
+
+.mobile-cred{
+  display: none;
+}
+
+.cred-row{
+  display: flex; 
+  justify-content: center;
+  gap:10px;
+  margin-top: 10px;
+  width: 100%;
+  height: 50px; 
+}
+
+.leftCred{
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  display: block;
+  margin-left: 100px;
+  
+}
+
+.rightCred{
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  display: block;
+  
+}
+
+footer{
+    color: white;
+    margin-top: 100px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px){
+
+     /*I used an LLM to figure out a hamburger menu, because the navigation kept squishing together
+    and I needed a better option. I had no clue how to create a hamburger menu before this.*/
+    .cred-row{
+      display: none;
+    }
+
+    .mobile-cred{
+      display: block;
+    }
+
+    .leftCred{
+      display: none;
+    }
+
+    .rightCred{
+      display: none;
+    }
+
+    .navbar{
+      position: relative;
+    }
+
+  .nav-container {
+    flex-wrap: wrap;            
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-toggle {
+    display: block;
+    height: 44px;
+    padding: 0 14px;
+    font-family: inherit;
+    font-size: 16px;
+    background: #EB5E28;
+    color: white;
+    border: 3px solid black;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+
+  .nav-logo {
+  font-size: 20px;
+
+}
+
+  .nav-links {
+    display: none;              
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0 0;
+    padding: 0;
+    list-style: none;
+    gap: 8px;
+  }
+
+  .nav-links.open {           
+    display: flex;
+  }
+
+  .nav-item {
+    margin-top: 10px;
+    display: block;
+    padding: 12px;
+    gap: 5px;
+    text-align: center;
+    background-color: #EB5E28;
+    border-bottom: 3px dashed #bd3e0c;
+  }
+
+.row1{
+  display: none;
+}
+
+.row2{
+  justify-content: center;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  gap:40px;
+  margin-top: 100px;
+  width: 100%;
+  min-height: 200px; 
+}
+
+.row-img{
+ display: none;
+}
+
+.mobile-img{
+   display: block;
+   border-radius: 25px;
+    border: 5px solid #bd3e0c;
+    box-shadow: 0 6px 12px black;
+    width: 100%;
+  }
+
+.row-card{
+  gap: 10px;
+  height: auto;
+  width: 300px;
+  background-color: #FFFCF2;
+  border: 3px solid #bd3e0c;
+  border-radius: 25px;
+  padding: 40px 30px;
+  box-shadow: 0 6px 12px black;
+  color: black; 
+  margin: 20px;
+}
+}
