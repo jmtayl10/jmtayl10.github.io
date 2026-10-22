@@ -111,21 +111,6 @@ function renderStar(appElement, data, categoryId, starId) {
     ${buildBackButton("category", category.id)}`;
 }
 
-/*Function that allows the various choices to be selected and displays the correct information on screen by 
-using category and star IDs.*/
-function handleViewChange(event, appElement, data) {
-  const button = event.target.closest("button[data-category]");
-  if (!button) {
-    return;
-  }
-  const { category, star } = button.dataset;
-  if (star) {
-    renderStar(appElement, data, category, star);
-  } else {
-    renderCategory(appElement, data, category);
-  }
-}
-
 /*Function that works with the actual back button, allowing the page's content to load the previous page.*/
 function handleViewChange(event, appElement, data) {
   const backButton = event.target.closest("button[data-back-to]");
