@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="Author" content="Jasmine Taylor">
+    <meta name="Description" content="Project 3 for CSCI 3054.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="space, stars, lifecycles, alien, cat">
+    <!--Links copied from Google in order to use a more space-like font.-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/mainPageStyles.css">
+    <link rel="stylesheet" href="CSS/homeStyles.css">
+    <link rel="stylesheet" href="CSS/auth.css">
+    <title> Dusty's Star Log: Main Page </title>
+</head>
+ 
+<body>
+    <!-- The star shape. Every star tab below reuses it with <use href="#star-shape">,
+         so this block must stay or the stars disappear. -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <symbol id="star-shape" viewBox="0 0 100 100">
+            <polygon points="50,8 62,36 94,38 69,58 78,91 50,73 22,91 31,58 6,38 38,36"
+                     fill="#FFC300" stroke="#FFC300" stroke-width="9" stroke-linejoin="round"/>
+        </symbol>
+    </svg>
+
+    <!-- I used Claude to learn how to create a spatial effect for the starting image. I also
+    had it teach me to make the stars on the side which pull out. -->
+    <header class="hero">
+        <div class="hero-bg" id="heroBg" style="background-image: url('CSS/img/indeximage2.png');" aria-hidden="true"></div>
+        <div class="hero-content" id="heroContent">
+            <img src="CSS/img/mainTitle3.gif" alt="Animated gif of the title: Dusty's Star Log" class="title-gif">
+            <p class="hero-hint">Hover over a star on the right to choose a page.</p>
+            <a href="#about" class="scroll-cue">Scroll down to learn more <span aria-hidden="true">&darr;</span></a>
+        </div>
+    </header>
+ 
+    <nav class="star-nav" aria-label="Main menu">
+        <ul>
+            <li data-show-when="out">
+                <a href="login.html" class="star-tab">
+                    <svg class="star-icon" aria-hidden="true"><use href="#star-shape"/></svg>
+                    <span class="tab-label">User Login</span>
+                </a>
+            </li>
+            <li>
+                <a href="starLogPage.html" class="star-tab" data-requires-login>
+                    <svg class="star-icon" aria-hidden="true"><use href="#star-shape"/></svg>
+                    <span class="tab-label">Star Log</span>
+                </a>
+            </li>
+            <li>
+                <a href="moreInfoPage.html" class="star-tab">
+                    <svg class="star-icon" aria-hidden="true"><use href="#star-shape"/></svg>
+                    <span class="tab-label">More Info</span>
+                </a>
+            </li>
+            <li>
+                <a href="contactPage.html" class="star-tab" data-requires-login>
+                    <svg class="star-icon" aria-hidden="true"><use href="#star-shape"/></svg>
+                    <span class="tab-label">Contact Dusty</span>
+                </a>
+            </li>
+            <li data-show-when="in">
+                <a href="password.html" class="star-tab">
+                    <svg class="star-icon" aria-hidden="true"><use href="#star-shape"/></svg>
+                    <span class="tab-label">Change Password</span>
+                </a>
+            </li>
+            <li data-show-when="in">
+                <a href="#" class="star-tab" data-logout>
+                    <svg class="star-icon" aria-hidden="true"><use href="#star-shape"/></svg>
+                    <span class="tab-label">Log Out</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+ 
+    <main id="about">
+        <div class="main-card">
+            <img src="CSS/img/dusty3.png" alt="Dusty, the green alien cat, sitting with his head tilted. He has his signature goggles and red bandana." class="dusty-img">
+            <h2> What is Dusty's Star Log? </h2>
+            <p> This website is dedicated to the learning and understanding of stellar evolution. This concept is better known as the lifecycle of stars.
+                Dusty's Star Log will discuss various types of stars, from small to huge to extremes. </p>
+ 
+            <p>Before you explore these stars, you must know that all stars begin in nebulae, which are clouds made up of gas and dust. Gravity will cause pockets
+                within a nebula to collapse under their own weight. The material in the center of this collapse begins to heat up, bringing about a star in the making.
+                After their birth, stars will live for millions to trillions of years! Finally, they die in a range of ways from fading away
+                to exploding. This extrordinary cycle even contributes to the science behind where the atoms in our own bodies came from!  </p>
+ 
+            <p> Stellar evolution can be overwhelming. Dusty's Star Log breaks down stellar evolution through examples. These log entries will
+                be small and consistent, making it easier to learn star types.
+            </p>
+ 
+            <ul>
+                <li>Start by logging in to open your star log.</li>
+                <li>Pick a life stage to explore: Main Sequence, Evolved Giants, Stellar Remnants, or Rare & Extreme.</li>
+                <li>Then pick a star type to read Dusty's log entry.</li>
+            </ul>
+        </div>
+    </main>
+ 
+    <footer> 2026, Jasmine Taylor. All Rights Reserved. </footer>
+ 
+    <!-- Makes the background move with the mouse to feel 3D.
+         Turned off on touch screens and for people who set "reduce motion". -->
+    <script>
+        const heroBg = document.getElementById("heroBg");
+        const heroContent = document.getElementById("heroContent");
+        const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        const hasMouse = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+ 
+        if (!reduceMotion && hasMouse) {
+            let targetX = 0, targetY = 0;   // where the mouse is (-0.5 to 0.5)
+            let x = 0, y = 0;               // where the layers are now (eases toward target)
+ 
+            window.addEventListener("mousemove", (event) => {
+                targetX = event.clientX / window.innerWidth - 0.5;
+                targetY = event.clientY / window.innerHeight - 0.5;
+            });
+ 
+            function animate() {
+                x += (targetX - x) * 0.08;
+                y += (targetY - y) * 0.08;
+                // Back layer moves the opposite way and tilts; front layers move with the mouse.
+                const TILT = 2;      // degrees the background tilts
+                const MOVE = 15;     // pixels the background shifts
+                const ZOOM = 1;      // how much the background is enlarged (1 = not at all)
+                heroBg.style.transform =
+                    `perspective(1200px) rotateY(${x * TILT}deg) rotateX(${-y * TILT}deg) translate3d(${-x * MOVE}px, ${-y * MOVE}px, 0) scale(${ZOOM})`;
+                heroContent.style.transform = `translate3d(${x * 30}px, ${y * 30}px, 0)`;
+                requestAnimationFrame(animate);
+            }
+            animate();
+        }
+    </script>
+    <script type="module" src="js/auth.js"></script>
+</body>
+</html>

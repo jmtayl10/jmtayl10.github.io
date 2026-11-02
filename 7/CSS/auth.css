@@ -1,0 +1,43 @@
+html[data-access="locked"]:not(.logged-in) body { 
+  visibility: hidden; 
+}
+
+html:not(.logged-in):not(.logged-out) [data-show-when] { 
+  visibility: hidden; 
+}
+
+html.logged-in  [data-show-when="out"],
+html.logged-out [data-show-when="in"] { 
+  display: none !important; 
+}
+
+html.logged-out [data-requires-login]::after { 
+  content: " 🔒"; 
+}
+
+.message:empty { 
+  display: none; 
+}
+
+.message { 
+  padding: 0.6rem; 
+  border-radius: 6px; 
+  text-align: center; 
+}
+
+.message.error   { 
+  background: #fde8e8; 
+  color: #9b1c1c; 
+}
+
+.message.success {
+   background: #e6f6ea; 
+   color: #1e6b34; 
+}
+
+#login-form, #signup-form, #password-form, #seed-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+

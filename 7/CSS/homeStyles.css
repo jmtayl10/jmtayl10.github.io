@@ -1,0 +1,237 @@
+/* The root for background color, star color, and the sizes of the stars. */
+:root {
+    --space-blue: #0029A5;
+    --star-gold: #FFC300;
+    --tab-white: #ffffff;
+    --star-size: 6.5rem;     
+    --peek: 5.2rem;          
+    --tab-width: 16rem;     
+    --tab-text: 1.3rem;     
+}
+
+html { 
+    scroll-behavior: smooth; overflow-x: hidden; 
+}
+
+/* Helps allow the image to fit the screen instead of zooming in ALL the way lol.*/
+body {
+    margin: 0;
+    padding: 0;
+    max-width: none;
+    width: auto;
+    overflow-x: visible;
+}
+
+/* The "hero" which is just the creative landing page. This esentially situates the entire 
+flex box for the hero and leaves a background color incase the image doesn't wanna load.*/
+.hero {
+    position: relative;
+    width: 100vw;
+    max-width: none;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    margin-top: 0;
+    height: 100vh;
+    min-height: 32rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--space-blue);       
+}
+
+/* My awesome epic drawing.*/
+.hero-bg {
+    position: absolute;
+    inset: -2%;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.04);
+    will-change: transform;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 0 calc(var(--peek) + 1.5rem) 0 1rem;   /* leaves room for the star tabs */
+    will-change: transform;
+}
+
+.hero-content .title-gif {
+    max-width: min(90vw, 44rem);
+    height: auto;
+}
+
+.hero-hint {
+    color: #fff;
+    font-family: "Oxanium", sans-serif;
+    font-size: 1.05rem;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.scroll-cue {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    border: 2px solid #fff;
+    border-radius: 999px;
+    color: #fff;
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.85rem;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.25);
+}
+.scroll-cue:hover, .scroll-cue:focus-visible { 
+    background: rgba(255, 255, 255, 0.2); 
+}
+
+.scroll-cue span { 
+    display: inline-block; 
+    animation: bob 1.6s ease-in-out infinite; 
+}
+
+@keyframes bob { 
+    50% { 
+        transform: translateY(4px); 
+    } 
+}
+
+.star-nav {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 20;
+}
+
+.star-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.75rem;
+}
+
+.star-tab {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    transform: translateX(calc(100% - var(--peek)));
+    transition: transform 0.35s ease;
+}
+
+.star-tab:hover,
+.star-tab:focus-visible {
+    transform: translateX(0);
+    outline: none;
+}
+
+.star-icon {
+    position: relative;
+    z-index: 1;
+    flex: none;
+    width: var(--star-size);
+    height: var(--star-size);
+    margin-right: calc(var(--star-size) * -0.38);   
+    filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.35));
+    transition: transform 0.35s ease;
+}
+
+.star-tab:hover .star-icon,
+.star-tab:focus-visible .star-icon {
+    transform: rotate(-20deg) scale(1.08);
+}
+
+.tab-label {
+    background: var(--tab-white);
+    color: var(--space-blue);
+    font-family: "Orbitron", sans-serif;
+    font-weight: 700;
+    font-size: var(--tab-text);
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    min-width: var(--tab-width);
+    padding: 1.4rem 1.5rem 1.4rem calc(var(--star-size) * 0.5);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+
+.star-tab:focus-visible .tab-label {
+    outline: 3px solid var(--star-gold);
+    outline-offset: 2px;
+}
+
+
+html.logged-out .star-tab[data-requires-login]::after {
+     content: none; 
+}
+
+html.logged-out .star-tab[data-requires-login] .tab-label::after { 
+    content: " 🔒"; 
+}
+
+#about {
+    max-width: 70rem;             
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    scroll-margin-top: 1rem;
+}
+
+@media (hover: none), (max-width: 600px) {
+    :root {
+        --star-size: 4.2rem;
+        --tab-width: 13rem;
+        --tab-text: 1rem; 
+    }
+
+    .star-nav {
+        position: absolute;
+        top: auto;
+        bottom: 3rem;
+        transform: none;
+    }
+
+    .star-tab { 
+        transform: translateX(0); 
+    }
+
+    .tab-label { 
+        padding: 0.95rem 1rem 0.95rem calc(var(--star-size) * 0.5); 
+    }
+
+    .hero { 
+        align-items: flex-start; 
+        padding-top: 3rem; 
+    }
+
+    .hero-content { 
+        padding: 0 1rem; 
+    }
+
+    .hero-hint { 
+        display: none; 
+    }
+
+    .scroll-cue { 
+        display: none; 
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .star-tab, .star-icon { 
+        transition: none; 
+    }
+
+    .hero-stars, .scroll-cue span { 
+        animation: none; 
+    }
+
+    html { 
+        scroll-behavior: auto; 
+    }
+}
